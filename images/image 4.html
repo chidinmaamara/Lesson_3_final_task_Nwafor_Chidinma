@@ -1,0 +1,1325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://www.e-iceblue.com/Introduce/doc-for-java.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="c# excel, c# word,vb.net excel,vb.net word" />
+  <meta name="description" content="c#/vb.net excel,word,pdf component" />
+  
+  <title>Spire.Doc for Java</title>
+  <link href="https://cdn.e-iceblue.com/templates/yoo_air/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.e-iceblue.com/plugins/system/2j_tabs/2j_tabs.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.e-iceblue.com/media/system/css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.e-iceblue.com/components/com_k2/css/k2.css" type="text/css" />
+  <style type="text/css">
+    <!--
+#menu li.mi890 > a{color: #4A89AD}
+    -->
+  </style>
+  <script type="text/javascript" src="/libraries/cache/fetch.php?f=15471bd603fc700a69eb0b7bba2b7b33.js"></script>
+  <script type="text/javascript">
+
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+
+			$$('a.modal').each(function(el) {
+				el.addEvent('click', function(e) {
+					new Event(e).stop();
+					SqueezeBox.fromElement(el);
+				});
+			});
+		});var K2RatingURL = 'https://www.e-iceblue.com/';var addthis_config = {"data_track_addressbar":true};
+setTimeout(function() {
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b5680b48f58dec6";
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.appendChild(script);
+}, 0);
+  </script>
+
+<link rel="stylesheet" href="/libraries/cache/fetch.php?f=ea469e62e26e6670fb7472e122bde503.css" type="text/css" />
+<script type="text/javascript" src="/libraries/cache/fetch.php?f=e87e60afa5b5bc3d7c90253b9921b51f.js"></script>
+<style type="text/css">body { min-width: 1140px; }
+.wrapper { min-width: 1140px; }
+</style>
+<script type="text/javascript">var Warp = Warp || {}; Warp.Settings = {"color":"turquoise","itemColor":null};</script>
+<script src="https://cdn.e-iceblue.com/plugins\content\syntaxhighlighter\scripts\shBrushJava.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/components\com_virtuemart\js/css_for_buy.css" type="text/css"><link rel="stylesheet" href="https://cdn.e-iceblue.com/templates/yoo_air/phone_css/phone_introduce.css" type="text/css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Java Word Library – Create Read Modify Print Convert Word Documents in Java" />
+<meta property="og:description" content="c#/vb.net excel,word,pdf component" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.e-iceblue.com/Introduce/doc-for-java.html" />
+<meta property="og:site_name" content="E-ICEBLUE" /><link rel="stylesheet" href="/libraries/cache/fetch.php?f=9efe7aaa857149be98d160c09151c8f4.css" type="text/css" /><style type="text/css">
+ body { min-width: 360px; }
+    .wrapper { min-width: 360px; }
+.product_menu ul a {
+    float: left;
+    list-style: none;
+    color: #303030;
+    text-decoration: none;
+    padding: 10px 20px 4px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 31px;
+}
+.product_menu ul a:hover {
+    color: #0D6AC2;
+}
+
+
+
+.ppt_cpp .product_banner .rt-contain {
+background-image: url('https://cdn.e-iceblue.com/images/Introduce/cpp/PPT-CPP.png');
+height: 300px;
+}
+
+
+
+.doc_cpp .product_banner .rt-contain {
+background-image: url('https://cdn.e-iceblue.com/images/Introduce/cpp/DOC-CPP.png');
+height: 300px;
+}
+
+.pdf_cpp .product_banner .rt-contain {
+background-image: url('https://cdn.e-iceblue.com/images/Introduce/cpp/PDF-CPP.png');
+height: 300px;
+}
+#tab1 .main-5 .wrapper{padding-bottom: 40px;}
+
+.pdf_android_free .product_banner .rt-contain{
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_pdf_f.png);
+    height: 300px;
+}
+.xls_android .product_banner .rt-contain{
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_xls.png);
+    height: 300px;
+}
+.xls_android #tab1 .overview_all6{
+    min-height:489px;
+}
+.doc_android .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_doc.png);
+    height: 300px;
+}
+.ppt_android .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_ppt.png);
+    height: 300px;
+}
+.ppt_android_free .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_ppt_f.png);
+    height: 300px;
+}
+.doc_android_free .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_doc_f.png);
+    height: 300px;
+}
+.office_android .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_office.png);
+    height: 300px;
+}
+.office_android_free .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_office_f.png);
+    height: 300px;
+}
+
+.ocr_net .product_banner .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/Intro/Intro_banner_net_ocr.png);
+    height: 300px;
+}
+.ocr_net .product_menu .rt-contain {
+    background-image: url(https://cdn.e-iceblue.com/images/Intro/Intro_banner_down_net.png) !important;
+    height: 50px;
+}
+
+
+
+
+
+
+
+#system{
+    display: none;
+}
+.rt-contain{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.pdf_android .product_banner .rt-contain{
+    background-image: url(https://cdn.e-iceblue.com/images/android/Intro_banner_android_pdf.png);
+    height: 300px;
+}
+.product_menu ul li{
+    float: left;
+    list-style: none;
+    color: #303030;
+    text-decoration: none;
+    padding: 10px 20px 4px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 31px;
+}
+.product_menu ul{
+    margin: 0px;
+    padding-left: 0px;
+}
+.product_menu{
+    background: url('https://cdn.e-iceblue.com/images/Intro/Intro_banner_down.png');
+    height: 50px;
+}
+.product_menu ul li:hover{
+    color: #0D6AC2;
+}
+.product_menu ul .active{
+    color: #0D6AC2;
+    border-bottom: 5px solid #0D6AC2;
+}
+.tab_drawer_heading{
+    display: none;
+}
+.product_banner{
+    background: url(https://cdn.e-iceblue.com/images/Intro/Intro_banner_up.png);
+}
+.product_menu .rt-contain{
+    background: url("https://cdn.e-iceblue.com/images/android/Intro_banner_down_android.png");
+    height: 50px;
+}
+.product_contents .over img {
+    position: absolute;
+    left: 350px;
+    top: 215px;
+}
+.product_contents .share img {
+    position: absolute;
+    right: 0px;
+    top: 180px;
+}
+.product_contents div.intro_btns a span.buy {
+    background: url(https://cdn.e-iceblue.com/images/Intro/buy_banner.png) 0px 0px no-repeat scroll transparent;
+    height: 34px;
+    width: 120px;
+    left: 405px;
+    top: 160px;
+}
+.product_contents div.intro_btns a span.download {
+    background: url(https://cdn.e-iceblue.com/images/Intro/download_banner.png) 0px 0px no-repeat scroll transparent;
+    background-position: 0px 0px;
+    width: 141px;
+    left: 556px;
+    top: 160px;
+}
+.product_contents div.intro_btns a span.demos{
+    background: url(https://cdn.e-iceblue.com/images/Intro/demos_banner.png) 0px 0px no-repeat scroll transparent;
+    height: 34px;
+    width: 120px;
+    left: 405px;
+    top: 160px;
+}
+#tab1 .overview_all6{width:1140px;margin:0px auto;min-height: 630px;background-color: #F4F2EB;font-size: 14px;color: #ffffff;}
+.product_contents #tab1 .overview_all6 .overview_left,.overview_right{float: left;}
+.product_contents #tab1 .overview_all6 .overview_left li{ list-style:square inside url('https://cdn.e-iceblue.com/images/Introduce/doc-dot.png');}
+.product_contents #tab1 .overview_all6 p,li{color:#303030;}
+.product_contents #tab1 .overview_all6 .ov_ul{padding-left: 0px;margin-top: 30px;}
+.product_contents #tab1 .overview_all6 .ov_ul2{padding-left: 0px;}
+.product_contents #tab1 .overview_all6 .ov_ul li{float: left;margin-right: 15px;min-height:0px;}
+.product_contents #tab1 .overview_all6 .ov_ul2 li{float: left;margin-right: 15px;margin-bottom: 30px;}
+.product_contents #tab1 .overview_all6 .over_6 div{float: left;}
+.product_contents #tab1 .overview_all6 .lefto_3 li{float: left;margin-bottom: 10px;}
+.product_contents #tab1 .overview_all6 .lefto_3 li:first-child {margin-right: 30px;}
+.product_contents #tab1 .overview_all6 .overview_left{margin-right: 40px;}
+.product_contents #tab1 .overview_all6 .ov_ul3 li{float: left;margin-right: 15px;margin-bottom: 30px;min-height:38px;}
+
+#demo_content .cats1 div ul li {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 8px 0 7px 0;
+}
+.intro_demo li{
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNpi/P//PwMxgAVE/PjHMHPZo98Mq578Yfj9j4HBV5KFIVmRhYGXhTEdReFSoKLeW7/humfd/83w9e9/hmoNNrgYE4hY8fgPhlXbX/xF4YMVgqxDB+hOByv0l2LBUGgtwozpmRSgw38A3bTr1V+Gf0CTLISYGYrVWFEUMhIbPEwMRAKiFQIEGACulS7kZbJDPgAAAABJRU5ErkJggg==);
+    line-height: 25px;
+}
+.intro_demo ul{
+    padding-left: 16px;
+}
+#demo_content .cats1 div ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px 45px 0 0px;
+}
+#demo_content .cats1 div ul li a {
+    text-decoration: none;
+    color: #303030;
+}
+#demo_content .cats1 div ul li a:hover{
+    color: #1b61a9;
+}
+#demo_content {
+    padding-bottom: 40px;
+}
+.p20{
+ margin: 30px 0;
+}
+@media (max-width: 1024px)and (min-width: 0){
+#toolbar #menu .mi315{display:none;}
+#toolbar #menu .lange_change{display:none;}
+.k2_latest ul li{width:auto;}
+.k2_latest ul li a{width:auto;}
+}
+#mymaintop1 .wrapper{background:url("https://cdn.e-iceblue.com/images/Intro/Intro_banner_down_java.png");}
+div.share{
+  
+}
+div.intro_btns {
+	float: left;
+	height: 186px;
+	width: 520px;
+}
+div.intro_btns a, div.intro_btns a span {
+	font-size: 0px;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+div.intro_btns a span.buy, div.intro_btns a span.demos, div.intro_btns a span.download {
+	background: url("https://cdn.e-iceblue.com/images/intro_imgs.png") 0px 0px no-repeat scroll transparent;
+	height: 34px;
+	width: 111px;
+	left: 445px;
+	top: 160px;
+	position: absolute;
+}
+div.intro_btns a span.demos {
+	background-position: 0px -44px;
+}
+div.intro_btns a span.download {
+	background-position: 0px -88px;
+	width: 141px;
+	left: 389px;
+}
+
+  .wrapper .overview_all6{width:1140px;margin:0px auto;min-height: 460px;background-color: #F4F2EB;font-size: 14px;color: #ffffff;}
+    .overview_all6 .overview_left,.overview_right{float: left;}
+    .overview_all6 .overview_left li{ list-style:square inside url('https://cdn.e-iceblue.com/images/Introduce/doc-dot.png');}
+    .overview_all6 p,li{color:#303030;}
+    .overview_all6 .ov_ul{padding-left: 0px;margin-top: 30px;}
+    .overview_all6 .ov_ul2{padding-left: 0px;}
+    .overview_all6 .ov_ul li{float: left;margin-right: 15px;min-height:0px;}
+    .overview_all6 .ov_ul2 li{float: left;margin-right: 15px;margin-bottom: 30px;}
+    .overview_all6 .over_6 div{float: left;}
+    .overview_all6 .lefto_3 li{float: left;margin-bottom: 10px;}
+    .overview_all6 .lefto_3 li:first-child {margin-right: 30px;}
+    .overview_all6 .overview_left{margin-right: 40px;}
+    .overview_all6 .ov_ul3 li{float: left;margin-right: 15px;margin-bottom: 30px;min-height:38px;}
+</style>
+<link rel="apple-touch-icon" href="https://cdn.e-iceblue.com/templates/yoo_air/apple_touch_icon.png" />
+<link href="https://cdn.e-iceblue.com/templates/yoo_air/phone_css/phone_all.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.e-iceblue.com/templates/yoo_air/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="https://cdn.e-iceblue.com/templates/yoo_air/js/grid-phone.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0P9F0Q9F33"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0P9F0Q9F33');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XLFT57F2BL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XLFT57F2BL');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 1070860357 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1070860357"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-1070860357', {'allow_enhanced_conversions':true});
+</script>
+</head>
+
+<body id="page" class="yoopage    style-turquoise menubar-glass background-glitter font-lucida ">
+
+	
+		<div id="toolbar">
+		<div class="wrapper">
+		 <div class="phone_button_menu"></div>
+			<div class="logo"><a href="/" alt=".NET components E-iceblue" ><span title="Home"></span></a></div><ul id="menu"><li class="mi211"><a>products</a><div class="separator">.NET APIs</div><ul><li class="mi418"><a href="/Introduce/spire-office-for-net.html">Spire.Office for .NET</a></li><li class="mi419"><a href="/Introduce/spire-office-viewer-net.html">Spire.OfficeViewer for .NET</a></li><li class="mi391"><a href="/Introduce/word-for-net-introduce.html">Spire.Doc for .NET</a></li><li class="mi420"><a href="/Introduce/word-viewer-net-introduce.html">Spire.DocViewer for .NET</a></li><li class="mi421"><a href="/Introduce/excel-for-net-introduce.html">Spire.XLS for .NET</a></li><li class="mi422"><a href="/Introduce/spreadsheet-for-net.html">Spire.Spreadsheet for .NET</a></li><li class="mi454"><a href="/Introduce/presentation-for-net-introduce.html">Spire.Presentation for .NET</a></li><li class="mi455"><a href="/Introduce/pdf-for-net-introduce.html">Spire.PDF for .NET</a></li><li class="mi456"><a href="/Introduce/pdf-viewer.html">Spire.PDFViewer for .NET</a></li><li class="mi457"><a href="/Introduce/pdf-viewer-asp.html">Spire.PDFViewer for ASP.NET</a></li><li class="mi458"><a href="/Introduce/data-export-for-net-intro.html">Spire.DataExport for .NET</a></li><li class="mi459"><a href="/Introduce/barcode-for-net.html">Spire.Barcode for .NET</a></li><li class="mi460"><a href="/Introduce/email-for-net.html">Spire.Email for .NET</a></li><li class="mi1007"><a href="/Introduce/ocr-for-net.html">Spire.OCR for .NET</a></li></ul><div class="separator">Free Products</div><ul><li class="mi503"><a href="/Introduce/spire-office-for-net-free.html">Free Spire.Office for .NET</a></li><li class="mi504"><a href="/Introduce/free-doc-component.html">Free Spire.Doc for .NET</a></li><li class="mi505"><a href="/Introduce/free-word-viewer-net.html">Free Spire.DocViewer for .NET</a></li><li class="mi506"><a href="/Introduce/free-xls-component.html">Free Spire.XLS for .NET</a></li><li class="mi507"><a href="/Introduce/free-presentation-component.html">Free Spire.Presentation for .NET</a></li><li class="mi508"><a href="/Introduce/free-pdf-component.html">Free Spire.PDF for .NET</a></li><li class="mi509"><a href="/Introduce/free-pdf-viewer-net.html">Free Spire.PDFViewer for .NET</a></li><li class="mi510"><a href="/Introduce/freepdfconverter.html">Free Spire.PDFConverter for .NET</a></li><li class="mi511"><a href="/Introduce/free-dataexport-component.html">Free Spire.DataExport for .NET</a></li><li class="mi512"><a href="/Introduce/barcode-for-net-introduce.html">Free Spire.Barcode for .NET</a></li></ul><div class="separator">WPF APIs</div><ul><li class="mi573"><a href="/Introduce/spire-office-for-wpf.html">Spire.Office for WPF</a></li><li class="mi574"><a href="/Introduce/word-for-wpf-introduce.html">Spire.Doc for WPF</a></li><li class="mi575"><a href="/Introduce/word-viewer-wpf-introduce.html">Spire.DocViewer for WPF</a></li><li class="mi576"><a href="/Introduce/excel-for-wpf-introduce.html">Spire.XLS for WPF</a></li><li class="mi577"><a href="/Introduce/pdf-for-wpf-introduce.html">Spire.PDF for WPF</a></li><li class="mi578"><a href="/Introduce/pdf-viewer-wpf.html">Spire.PDFViewer for WPF</a></li></ul></li><li class="mi214"><a>Purchase</a><ul><li class="mi197"><a href="/Download/product-list.html">Order Online</a></li><li class="mi219"><a href="/Download/product-list.html">Download Centre</a></li><li class="mi1080"><a href="/TemLicense.html">Temporary License</a></li><li class="mi295"><a href="/Misc/purchase-policies.html">Purchase Policies</a></li><li class="mi296"><a href="/Tutorials/Licensing/Renew-Subcription.html">Renewal Policies</a></li><li class="mi326"><a href="/Misc/find.html">Find A Reseller</a></li><li class="mi293"><a href="/Misc/purchase-faqs.html">Purchase FAQS</a></li><li class="mi147"><a href="/Misc/support-faqs.html">Support FAQs</a></li><li class="mi217"><a href="/Tutorials/Licensing/Licensing.html">How to Apply License</a></li><li class="mi291"><a href="/Tutorials/Licensing/License-Agreement.html">License Agreement</a></li><li class="mi836"><a href="/privacypolicy.html">Privacy Policy</a></li></ul></li><li class="mi216"><a>Support</a><ul><li class="mi231"><a href="/">Sample Center</a><ul><li class="mi141"><a href="/forum">Forum</a></li><li class="mi335"><a href="/LiveDemo.html">Live Demo</a></li><li class="mi314"><a href="/Misc/customized-demo.html">Customized Demo</a></li><li class="mi379"><a href="https://eiceblue.github.io">Code Samples</a></li><li class="mi1041"><a href="/news.html">Newsletter</a><ul><li class="mi1059"><a href="/newsletter-subscribe.html">Subscribe</a></li><li class="mi1060"><a href="/Unsubscribe-Newsletter.html">Unsubscribe</a></li></ul></li><li class="mi1017"><a href="/misc/apireference.html">API Reference</a></li></ul></li></ul><ul><li class="mi237"><a href="/">Program Guide</a><ul><li class="mi239"><a href="/Tutorials/Spire.Doc/Spire.Doc-Program-Guide/Spire.Doc-Program-Guide-Content.html">Spire.Doc for .NET</a></li><li class="mi912"><a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Spire.Doc-Program-Guide-Content-for-Java.html">Spire.Doc for Java</a></li><li class="mi238"><a href="/Tutorials/Spire.XLS/Spire.XLS-Program-Guide/Spire.XLS-Program-Guide-Content.html">Spire.XLS for .NET</a></li><li class="mi954"><a href="/Tutorials/Java/Spire.XLS-for-Java/Program-Guide/Spire.XLS-Program-Guide-Content-for-Java.html">Spire.XLS for Java</a></li><li class="mi332"><a href="/Tutorials/Spire.Presentation/Program-Guide/Spire.Presentation-Program-Guide-Content.html">Spire.Presentation for .NET</a></li><li class="mi889"><a href="/Tutorials/Java/Spire.Presentation-for-Java/Program-Guide/Spire.Presentation-Program-Guide-Content-for-Java.html">Spire.Presentation for Java</a></li><li class="mi240"><a href="/Tutorials/Spire.PDF/Spire.PDF-Program-Guide/Spire.PDF-Program-Guide-Content.html">Spire.PDF for .NET</a></li><li class="mi866"><a href="/Tutorials/JAVA/Spire.PDF-for-JAVA/Program-Guide/Spire.PDF-Program-Guide-Content-for-JAVA.html">Spire.PDF for Java</a></li></ul></li></ul></li><li class="mi315"><a>Tutorials</a></li><li class="mi218"><a>Corporation</a><ul><li class="mi142"><a href="/Misc/about-us.html">About Us</a></li><li class="mi220"><a href="/Misc/maillist.html">Contact Us</a></li><li class="mi327"><a href="/Misc/partner.html">Partner</a></li><li class="mi146"><a href="/Misc/reseller.html">Become Our Reseller</a></li><li class="mi292"><a href="/Misc/affiliate.html">Affiliate</a></li><li class="mi1069"><a href="/Misc/paid-support.html ">Paid Support</a></li><li class="mi144"><a href="/Misc/our-customers.html">Our Customers</a></li><li class="mi336"><a href="/Misc/reviews.html">Reviews</a></li></ul></li><li class="icon user login">
+					<a title="Login/Register" href="/Login-Register" userInfoUrl="/View-your-account-details.html" userLogoutUrl="/index.php?option=com_myuser&amp;task=logout"><span>Login/Register</span></a>
+				</li><li class="icon search-box">
+	<a title="Search"><span>Search</span></a>
+	<ul>
+		<li><div id='cse-panel'><div class='cse-left'></div><div id='cse'></div><div class='cse-right'></div></div></li>
+	</ul>
+</li><li class="lange_change">
+        <a class="lange_now"><img src="https://cdn.e-iceblue.com/images/cloud/en_blue.png"></a>
+		<div class="dropdown">
+
+                  <div class="column">
+                    <ul>
+                     <li class="mi142"><a href="https://www.e-iceblue.cn">Chinese</a></li>
+                     <li class="mi142"><a href="https://jp.e-iceblue.com">Japanese</a></li>
+</ul>
+		</div>
+	
+			
+		</div>
+    </li></ul><script type="text/javascript" src="https://cdn.e-iceblue.com/api_documents/menu/js_for_menu.js"></script>
+<link rel="stylesheet" href="https://cdn.e-iceblue.com/api_documents/menu/css_for_menu.css" type="text/css">
+<script type="text/javascript">
+var isPhone = window.navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+            if(!isPhone){
+jQuery('#menu').initDropdownMenu().initUserMenu();
+}
+</script>		</div>
+	</div>
+	
+	<div id="page-header">
+		<div id="headermodules">
+					</div>
+	</div>
+
+	<div id="page-body">
+	
+
+		<div class="">
+
+			
+			
+			<div class="middle-wrapper">
+				<div id="middle">
+					<div id="middle-expand">
+
+						<div id="main">
+							<div id="main-shift">
+							
+							
+							
+							
+							
+							
+															<div id="mytop1">
+								<div class="wrapper" style="min-height:50px;">
+									<div class="module    first last">
+
+	
+		
+	<div id="net">
+    <div class="intro_products_banner">
+        <div id="compontent">
+            <div class="intro_product intro_product_java_doc">
+                <div class="intro_btns">
+                    <a href="/Buy/Spire.Doc-java.html" rel="nofollow">
+                        <span class="buy">Buy</span>
+                    </a>
+                    <a href="/Download/doc-for-java.html" rel="nofollow">
+                        <span class="download">Download</span>
+                    </a>
+                </div>
+                <div class="img_over">
+                    <span class="over"></span>
+                </div>
+                <div class="img_share">
+                    <span class="share"></span>
+
+                </div>
+
+                <div class="intro_AddThis"><div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="phone_banner">
+    <div id="phone_banner_img">
+        <img class="col-xs-12 lazyloaded" src="https://cdn.e-iceblue.com/images/Introduce/OfficeNET/Java_doc.png" alt="Spire. Doc for Java" width="192">
+    </div>
+    <h1>Java Word Library – Create Read Modify Print Convert Word Documents in Java</h1>
+    <h4>Professional Java Library to process Word documents</h4>
+    <div class="intro_btns_phone"><a href="/Buy/Spire.Doc-java.html" rel="nofollow"><span class="buy">Buy</span></a><a href="/Download/doc-for-java.html" rel="nofollow"><span class="download">Download</span></a></div>
+</div>
+		
+</div>								</div>
+								</div>
+								<!-- mytop1 end -->
+														
+																<div id="mymaintop1">
+								<div class="wrapper" style="min-height:50px;">
+									<div class="module product-menus   first last">
+
+	
+		
+	<ul class="menu"><li class="level1 item1 first"><a href="https://www.e-iceblue.com/Introduce/doc-for-java.html" class="level1 item1 first"><span class="i891 bg">Overview</span></a></li><li class="level1 item2"><a href="/Introduce/doc-for-java/Features.html" class="level1 item2"><span class="i892 bg">Features</span></a></li><li class="level1 item3"><a href="/Introduce/doc-for-java/Support.html" class="level1 item3"><span class="i895 bg">Support</span></a></li><li class="level1 item4"><a href="/Introduce/doc-for-java/What-s-News.html" class="level1 item4"><span class="i896 bg">What's New</span></a></li><li class="level1 item5 last"><a href="/Introduce/doc-for-java/Live-Demo.html" rel="nofollow" class="level1 item5 last"><span class="i1014 bg">Live Demo</span></a></li></ul>		
+</div>								</div>
+								</div>
+								<!-- mymaintop1 end -->
+								
+								
+																
+								
+																<div id="mymaintop2">
+								
+									<div class="module    first last">
+
+	
+		
+	<div class="main-first">
+<div class="wrapper">
+<div class="p206">
+<table border="0" cellspacing="0" cellpadding="0" width="1140">
+<tbody>
+<tr>
+<td style="padding:37px 0 30px 0;" colspan="4" valign="top">
+<div style="font-size:15px;">
+<p><strong>Spire.Doc for Java</strong> is a  professional Word API that empowers Java applications to <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Document-Operation/Create-Word-Document-in-Java.html">create</a>,  convert, manipulate and <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Print/New-method-to-print-Word-document-in-Java.html">print  Word</a> documents without dependency on Microsoft Word.</p>
+<p>By using this multifunctional library,  developers are able to process copious tasks effortlessly, such as <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Image-and-Shape/Insert-Image-into-Word-Document-in-Java.html">inserting  image</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Hyperlink/Insert-Hyperlinks-in-Word-in-Java.html">hyperlink</a>,  <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Security/Add-Digital-Signatures-to-Word-in-Java.html">digital signature</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Bookmarks/Insert-and-Remove-Bookmarks-in-Word-in-Java.html">bookmark</a> and <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Watermark/Java-add-text-watermark-and-image-watermark-to-word-document.html">watermark</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Header-and-Footer/Insert-Header-and-Footer-to-Word-in-Java.html">setting  header and footer</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Table/Create-Table-in-Word-in-Java.html">creating  table</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Page-Background/Java-set-background-image-and-background-color-for-word-document.html">setting  background image</a>, and <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/FootNote/Insert-footnote-to-word-in-Java.html">adding  footnote</a> and endnote.</p>
+<p>In addition, Spire.Doc for Java supports  file format conversions from <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-PDF-in-Java.html">Word to PDF</a>, XPS, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-Images-in-Java.html">Image</a>,  EPUB, HTML, TXT, ODT, RTF, WordML, WordXML and many more.</p>
+</div>
+</td>
+<td rowspan="2" width="243" align="center" valign="top">
+<div style="margin:50px 0 50px 50px;;border-left:1px solid #E2E2E2;float:right;padding-left:50px;"><img src="https://cdn.e-iceblue.com/images/Intro/intro_doc.png" border="0" alt="Spire.Doc for Java" width="173" height="173" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="main-second" style="background-image:-webkit-linear-gradient(to bottom, #a2def9, #7fd4ff);background-image:linear-gradient(to bottom,#a2def9,#7fd4ff);">
+<div class="wrapper">
+<table border="0" cellspacing="0" cellpadding="0" width="1140">
+<tbody>
+<tr>
+<td style="border-left:1px solid white;padding:0px 0 0px 30px;margin-right:45px;" colspan="4" width="319px" valign="top">
+<div class="product-3title">Commercial Edition $999</div>
+<p style="margin:20px 0 24px 0;min-height:84px;">Compared with Free Spire.Doc for Java, the commercial edition of Spire.Doc for Java has no limitation on the number of paragraphs and tables and is more comprehensive in processing Word files.</p>
+<div class="product-3buy"><a href="/Buy/Spire.Doc-java.html" target="_self"><img src="https://cdn.e-iceblue.com/images/Intro/3_buy_now.png" border="0" /></a></div>
+</td>
+<td colspan="4" width="43px" valign="top"></td>
+<td style="border-left:1px solid white;padding:0px 0 0px 30px;" colspan="4" width="319px" valign="top">
+<div class="product-3title">Free Edition $0</div>
+<p style="margin:20px 0 24px 0;min-height:84px;">Free Spire.Doc for Java is limited to 500 paragraphs and 25 tables. This limitation is enforced during reading or writing files. When converting Word documents to PDF and XPS files, you can only get the first 3 pages of PDF file.</p>
+<div class="product-3buy"><a href="/Download/doc-for-java-free.html" target="_self"><img src="https://cdn.e-iceblue.com/images/Intro/3_download.png" border="0" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="main-6" style="background: url('https://cdn.e-iceblue.com/images/cloud/Link_1px.png');">
+<div class="wrapper"><a href="/Introduce/spire-cloud-word-for-net.html"><img src="https://cdn.e-iceblue.com/images/cloud/Link_pic_doc.gif" border="0" alt="Spire.Cloud.Word for .NET"></a></div>
+</div>
+<div class="main-third" style="background-color: #F4F2EB;">
+<div class="wrapper">
+<div class="overview"><img src="https://cdn.e-iceblue.com/images/Intro/overview.png" border="0" /></div>
+<div class="overview_all6">
+<div class="overview_left">
+<table border="0" cellspacing="0" cellpadding="0" width="570">
+<tbody>
+<tr>
+<td rowspan="2" width="77" height="68" align="left" valign="top">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-net.png); width: 68px; height: 68px;">
+<div style="text-align: center; height: 68px; line-height: 68px;">Java</div>
+</div>
+</td>
+<td colspan="4"></td>
+</tr>
+<tr>
+<td rowspan="3" width="35"></td>
+<td style="border-bottom: 1px solid #c0c0c0;padding-bottom: 16px;" colspan="4" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="6">
+<li>Standalone Java Component</li>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p style="padding-left: 14px;">100% independent Java Word class library<br />Doesn't require Microsoft Office installed on system.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="570">
+<tbody>
+<tr>
+<td style="padding-top:30px;" rowspan="2" width="77" height="68" align="left" valign="top">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-wv.png); width: 71px; height: 68px;">
+<div style="text-align: center;padding-top: 20px;font-size: 13px;line-height: 95%;">Word<br />Version</div>
+</div>
+</td>
+<td colspan="4"></td>
+</tr>
+<tr>
+<td rowspan="3" width="35"></td>
+<td style="border-bottom: 1px solid #c0c0c0;" colspan="4" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="6">
+<ul class="ov_ul ov_uldoc">
+<li>Word 97-03</li>
+<li>Word 2007</li>
+<li>Word 2010</li>
+<li>Word 2013</li>
+<li style="margin:10px 0 20px 0;">Word 2016</li>
+<li style="margin:10px 0 20px 20px;">Word 2019</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="6"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="margin-top: 30px;" border="0" cellspacing="0" cellpadding="0" width="570">
+<tbody>
+<tr>
+<td rowspan="2" width="77" height="68" align="left" valign="top">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-op.png); width: 77px; height: 68px;">
+<div style="text-align: center; height: 68px; line-height: 68px; font-size: 12px; width: 68px;">Operation</div>
+</div>
+</td>
+<td colspan="4"></td>
+</tr>
+<tr>
+<td colspan="4" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="6" width="35"></td>
+<td class="lefto_3" colspan="6">
+<li>Mail Merge, Create Field, Fill Field, Update Field</li>
+</td>
+</tr>
+<tr>
+<td class="lefto_3" colspan="6">
+<li>Protect, Encrypt, Decrypt </li>
+<li>Find Replace Highlight</li>
+</td>
+</tr>
+<tr>
+<td class="lefto_3" colspan="6">
+<li>Insert, Edit, remove bookmark</li>
+<li>Image and Shape</li>
+</td>
+</tr>
+<tr>
+<td class="lefto_3" colspan="6">
+<li>Merge and Split Word document</li>
+<li>Header and Footer</li>
+</td>
+</tr>
+<tr>
+<td class="lefto_3" colspan="6">
+<li>Insert, Reply, remove comment</li>
+<li>Create & Update Table</li>
+</td>
+</tr>
+<tr>
+<td class="lefto_3" colspan="6">
+<li>Print Word Document</li>
+<li>Create, Modify, Remove hyperlink</li>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="overview_right">
+<table border="0" cellspacing="0" cellpadding="0" width="530">
+<tbody>
+<tr>
+<td rowspan="2" width="71" height="69" align="left" valign="top">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c.png); width: 71px; height: 69px;">
+<div style="text-align: center; height: 69px; line-height: 69px; font-size: 12px;">Conversion</div>
+</div>
+</td>
+<td colspan="4" width="40"></td>
+<td colspan="4" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第一排--> 
+<tr>
+<td style="padding-left: 60px;" width="176">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">TXT</div>
+</div>
+</td>
+<td width="130">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/ppt-c2.png); width: 110px; height: 51px;">
+<div style="text-align: center; height: 51px; line-height: 51px;">PostScript</div>
+</div>
+</td>
+<td>
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">PDF</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="margin-top: 20px;" border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第二排--> 
+<tr>
+<td style="padding-left: 25px;" width="341">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">RTF</div>
+</div>
+</td>
+<td>
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">XPS</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第三排--> 
+<tr>
+<td width="75">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">HTML</div>
+</div>
+</td>
+<td width="87">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c5.png) no-repeat; width: 64px; height: 21px; font-size: 0px;">1</div>
+</td>
+<td width="118">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c2.png) no-repeat; width: 95px; height: 95px; font-size: 0px;">2</div>
+</td>
+<td width="86">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c4.png) no-repeat; width: 63px; height: 7px; font-size: 0px;">3</div>
+</td>
+<td width="52">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">EPUB</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第四排--> 
+<tr>
+<td style="padding-left: 25px;" width="52">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">XML</div>
+</div>
+</td>
+<td align="top" valign="top">
+<div style="text-align: center;color:#333;margin-top: 5px;">Doc/Docx</div>
+</td>
+<td width="52">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">SVG</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="margin-top: 20px;" border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第五排--> 
+<tr>
+<td style="padding-left: 60px;" width="52">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">ODT</div>
+</div>
+</td>
+<td>
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c3.png) no-repeat; width: 184px; height: 7px; background-position: 26px 0; font-size: 0px;">5</div>
+</td>
+<td width="92">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">Image</div>
+</div>
+</td>
+<td width="52">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-c1.png); width: 52px; height: 52px;">
+<div style="text-align: center; height: 52px; line-height: 52px;">PCL</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第6排--> 
+<tr>
+<td>
+<div style="width: 322px; height: 23px; border-right: 1px solid #66ccff; font-size: 0px;">4</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="418">
+<tbody>
+<!--第7排--> 
+<tr>
+<td style="padding-left: 196px;" width="">
+<div class="over_6" style="width: 141px; height: 38px; border: 1px solid #66CCFF; padding: 8px; border-radius: 40px; padding-left: 15px;">
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-image.png); width: 37px; height: 38px; margin-right: 10px;">
+<div style="text-align: center; height: 38px; line-height: 38px; width: 38px; font-size: 12px;">PNG</div>
+</div>
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-image.png); width: 37px; height: 38px; margin-right: 10px;">
+<div style="text-align: center; height: 38px; line-height: 38px; width: 38px; font-size: 12px;">BMP</div>
+</div>
+<div style="background: url(https://cdn.e-iceblue.com/images/Introduce/doc-image.png); width: 37px; height: 38px; margin-right: 10px;">
+<div style="text-align: center; height: 38px; line-height: 38px; width: 38px; font-size: 12px;">JPEG</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="main-fourth">
+<div class="wrapper">
+<div class="mainfunction"><img src="https://cdn.e-iceblue.com/images/Intro/mainfunction.png" border="0" /></div>
+<table border="0" cellspacing="0" cellpadding="0" width="1140">
+<tbody>
+<tr style="margin-bottom:45px;">
+<td colspan="4" valign="top">
+<div class="mainfunction1">
+<div class="icon01">Only Spire.Doc for Java, No Microsoft Office</div>
+<p>Spire.Doc for Java is a totally independent Word component, Microsoft Office is not required in order to use Spire.Doc for Java.</p>
+</div>
+</td>
+<td colspan="4" valign="top">
+<div class="mainfunction1">
+<div class="icon02">High Quality File Conversion</div>
+<p>Spire.Doc  for Java allows converting popular file formats like <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Java-Convert-HTML-to-PDF.html">HTML</a>, RTF, ODT, TXT,  WordML, WordXML to Word and exporting Word to commonly used file formats such  as <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-PDF-in-Java.html">PDF</a>, XPS, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-Images-in-Java.html">Image</a>, EPUB, HTML, TXT, ODT, RTF, WordML, WordXML in high quality. Moreover,  conversion between Doc and Docx is supported as well.</p>
+</div>
+</td>
+<td colspan="4" valign="top">
+<div class="mainfunction2">
+<div class="icon03">Support a Rich Set of Word Elements</div>
+<p>Spire.Doc  for Java supports a rich set of Word elements, including section, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Header-and-Footer/Insert-Header-and-Footer-to-Word-in-Java.html">header</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Header-and-Footer/Insert-Header-and-Footer-to-Word-in-Java.html">footer</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/FootNote/Insert-footnote-to-word-in-Java.html">footnote</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/FootNote/Add-an-Endnote-to-Word-in-Java.html">endnote</a>, paragraph, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Paragraph/Create-Bulleted-and-Numbered-Lists-in-Word-in-Java.html">list</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Table/Create-Table-in-Word-in-Java.html">table</a>, text, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Document-Operation/Create-Table-of-Contents-in-Word-in-Java.html">TOC</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/FormField/Add-Fillable-Forms-to-Word-in-Java.html">form field</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Mail-Merge/Java-create-mail-merge-and-merge-text-value-on-Word.html">mail merge</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Hyperlink/Insert-Hyperlinks-in-Word-in-Java.html">hyperlink</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Bookmarks/Insert-and-Remove-Bookmarks-in-Word-in-Java.html">bookmark</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Watermark/Java-add-text-watermark-and-image-watermark-to-word-document.html">watermark</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Image-and-Shape/Insert-Image-into-Word-Document-in-Java.html">image</a>, style, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Image-and-Shape/Insert-Shapes-in-Word-in-Java.html">shape</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Textbox/Insert-or-Delete-a-Text-Box-in-Word-in-Java.html">textbox</a>, ole, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Image-and-Shape/Java-insert-WordArt-to-word-document.html">WordArt</a>, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Page-Background/Java-set-background-image-and-background-color-for-word-document.html">background settings</a>, digital signature, <a href="/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Security/Encrypt-and-Decrypt-Word-Document-in-Java.html">document encryption</a> and many more.</p>
+</div>
+</td>
+</tr>
+<tr style="margin-bottom:45px;">
+<td colspan="4" valign="top">
+<div class="mainfunction1">
+<div class="icon04">Easy Integration</div>
+<p>Spire.Doc for Java can be easily integrated into Java applications.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="main-5" style="background-color: #F4F2EB;">
+<div class="wrapper">
+<div class="effect"><img src="https://cdn.e-iceblue.com/images/Intro/effect.png" border="0" /></div>
+</div>
+</div>		
+</div>								
+								</div>
+							
+								<!-- mymaintop2 end -->
+																
+								
+								
+								
+								
+								
+
+																<div id="maintop">
+								<div class="wrapper">
+									<div class="maintopbox float-left width100"><div class="module mod-box   first last">
+
+		
+	<div class="box-t1">
+		<div class="box-t2">
+			<div class="box-t3"></div>
+		</div>
+	</div>
+	
+	<div class="box-1">
+		<div class="box-2">
+			<div class="box-3 deepest">
+			
+								
+				    <div class="smoothbox">
+        <div class=" smooth">
+            <div class="banner">
+    
+    
+                <ul>
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Insert a Watermark.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Add a Watermark</h1>
+                            <p>A watermark is used to declare confidentiality, copyright, or other attributes of the document, or as a decoration to make the document more attractive. You can add either text or image watermarks to Word documents.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Watermark/Java-add-text-watermark-and-image-watermark-to-word-document.html">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Convert Word to PDF.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Convert Word to PDF</h1>
+                            <p>PDF files are preferred over Word documents because they are safe, simple to open, and easy to manage on any device. PDF is the most popular file format that users would convert Word to. </p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-PDF-in-Java.html"><img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Convert Word to XPS.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Convert Word to XPS</h1>
+                            <p>The XPS format is Microsoft’s alternative to PDF. It helps to view, edit, print as well as annotate the document.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Java-Convert-Word-to-XPS-XML-RTF-TXT-and-SVG.html ">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Convert Word to PNG.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Convert Word to PNG</h1>
+                            <p>When you finish creating a flyer or a notice in Word, you may want to save it as a PNG image file in order to make it accessible via a smartphone.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Conversion/Convert-Word-to-Images-in-Java.html">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Create a Form.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Create a Form</h1>
+                            <p>Form fields make it easier to collect information. Users can enter information by choosing an item from a drop-down list, inserting text in a combo box, or checking a check box.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/FormField/Add-Fillable-Forms-to-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Compare Documents.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Compare Documents</h1>
+                            <p>If you receive two nearly-identical Word documents, the ideal way to determine whether there are any differences between them is to compare the two documents.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Document-Operation/Compare-Two-Word-Documents-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Digitally Sign Documents.png" alt="">
+                        <div class="Rotatetext">
+                            <h1 style="font-size: 23px;">Digitally Sign Documents</h1>
+                            <p>A digital signature provides assurances about the validity and authenticity of your Word documents. Once a Word document is digitally signed, any changes to the document will invalidate the signature.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Security/Add-Digital-Signatures-to-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Extract Text and Images.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Extract Text and Images</h1>
+                            <p>When you just need to get the information in a Word document regardless of its format and structure, you can simply extract the text and images from the document.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Text/Extract-Text-and-Images-from-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Find and Highlight.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Find and Highlight</h1>
+                            <p>If you want to emphasize some words, you can find and highlight them in a bright color so that the readers could catch them easily.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Text/Find-and-Highlight-Text-in-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Headers and Footers.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Headers and Footers</h1>
+                            <p>Headers and footers are useful for including information that you want to appear on every page of a document, such as company logo or page number.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Header-and-Footer/Insert-Header-and-Footer-to-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Insert Math Equations.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Insert Math Equations</h1>
+                            <p>Mathematical equations often appear in academic documents. Spire.Doc supports inserting or creating math equations from LaTeX or MathML code.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Document-Operation/Java-insert-math-equation-to-Word.html">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Insert a Table.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Insert a Table</h1>
+                            <p>A table is a grid of cells arranged in rows and columns. It is often used to organize data that is too detailed or complicated to be described adequately in the text, allowing the reader to quickly understand the relationship between the data.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Table/Create-Table-in-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Insert Images and Shapes.png" alt="">
+                        <div class="Rotatetext">
+                            <h1 style="font-size: 23px;">Insert Images and Shapes</h1>
+                            <p>Instead of typing monotonous plain text in a word document, you can also insert images and shapes to illustrate your ideas and beautify the document.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Image-and-Shape/Insert-Image-into-Word-Document-in-Java.html " alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Mail Merge.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Mail Merge</h1>
+                            <p>Mail Merge is a handy feature that allows you to quickly produce multiple documents, such as letters or emails, using information stored in a list, spreadsheet or database.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Mail-Merge/Java-create-mail-merge-and-merge-text-value-on-Word.html">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <img src="https://cdn.e-iceblue.com/images/intro_gallery/Doc_Java/Replace Text.png" alt="">
+                        <div class="Rotatetext">
+                            <h1>Replace Text</h1>
+                            <p>The ability to replace existing text (or placeholders) in a Word document makes it possible for programmers to quickly generate Word reports or documents based on a template.</p>
+                            <a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Text/Replace-Text-with-New-Text-in-Word-in-Java.html" alt="">
+                                <img src="https://cdn.e-iceblue.com/images/Screenshots/Learn-More.png" alt=""></a>
+                        </div>
+                    </li>
+    
+
+                </ul>
+    
+                <div class="Rotation-key">
+                    <img class="btn btn-l" src="https://cdn.e-iceblue.com/images/Screenshots/left-1.png" alt="">
+    
+                    <img class="btn btn-r" src="https://cdn.e-iceblue.com/images/Screenshots/right-1.png" alt="">
+                    <ol class="circle"></ol>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="https://cdn.e-iceblue.com/images/Screenshots/banner.js"></script>				
+			</div>
+		</div>
+	</div>
+
+	<div class="box-b1">
+		<div class="box-b2">
+			<div class="box-b3"></div>
+		</div>
+	</div>
+		
+</div></div>								</div>
+								</div>
+								<!-- maintop end -->
+														
+								
+								
+																
+								
+																
+								
+								
+								
+								
+
+								<div id="mainmiddle">
+									<div id="mainmiddle-expand">
+
+										<div id="content">
+											<div id="content-shift">
+											
+
+												
+												
+												
+												<div id="component" class="floatbox">
+													
+
+<script language="javascript" type="text/javascript">
+function iFrameHeight() {
+	var h = 0;
+	if ( !document.all ) {
+		h = document.getElementById('blockrandom').contentDocument.height;
+		document.getElementById('blockrandom').style.height = h + 60 + 'px';
+	} else if( document.all ) {
+		h = document.frames('blockrandom').document.body.scrollHeight;
+		document.all.blockrandom.style.height = h + 20 + 'px';
+	}
+}
+</script>
+
+<div id="system" class="">
+
+	
+	<iframe 		id="blockrandom"
+		name="iframe"
+		src="/"
+		width="100%"
+		height="0"
+		scrolling="no"
+		align="top"
+		frameborder="0"
+		class="">
+		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe>
+
+</div>
+												</div>
+
+												
+											
+											</div>
+										
+										</div>
+										<!-- content end -->
+
+										
+										
+									</div>
+								</div>
+								<!-- mainmiddle end -->
+
+								
+							</div>
+						</div>
+
+						
+						
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+								
+	<span id="span_for_all" style="height:5px;background:#ffffff;margin:0px;display:block;"></span>
+	
+	<div id="page-footer" style="background-color:#efefef;">
+
+		<div class="wrapper">
+
+		
+						<div id="bottom1">
+				<div class="bottombox float-left width100"><div class="module    first last">
+
+	
+		
+	<div class="footer-wrapper">
+    <div class="wrapper">
+
+        <div class="footer-one">
+            <div id="index-footer1">
+                <div class="twitter_1" style="margin-left:230px;"><a href="https://twitter.com/eiceblue" target="_blank" title="Twitter">twitter_1</a></div>
+                <div class="skype_1"><a href="skype:iceblue-support?call" target="_blank" title="Skype">skype_1</a></div>
+                <div class="youtube_1"><a href="http://www.youtube.com/user/eiceblue" target="_blank" title="Youtube">youtube_1</a></div>
+                <div class="facebook_1"><a href="http://www.facebook.com/eiceblue" target="_blank" title="Facebook">facebook_1</a></div>
+                <div class="forum_1"><a href="/forum" target="_blank" title="Forum">forum_1</a></div>
+            </div>
+        </div>
+        <div class="footer-two">
+
+            <div class="footer-lists lists-one">
+                <span class="lists-title">Products</span>
+                <div class="contents">
+                    <ul class="links">
+                        <li><a href="/Introduce/spire-office-for-net.html">Spire.Office for .NET</a></li>
+                        <li><a href="/Introduce/word-for-net-introduce.html">Spire.Doc for .NET</a></li>
+                        <li><a href="/Introduce/excel-for-net-introduce.html">Spire.XLS for .NET</a></li>
+                        <li class="ppt-for-desktop"><a href="/Introduce/presentation-for-net-introduce.html">Spire.Presentation for .NET</a></li>
+                        <li class="ppt-for-phone"><a href="/Introduce/presentation-for-net-introduce.html">Spire.Presentation</a></li>
+                        <li><a href="/Introduce/pdf-for-net-introduce.html">Spire.PDF for .NET</a></li>
+                        <li><a href="/Introduce/barcode-for-net.html">Spire.Barcode for .NET</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-lists lists-two">
+                <span class="lists-title lists-title-none">Products</span>
+                <div class="contents">
+                    <ul class="links">
+                        <li><a href="/Introduce/office-for-java.html">Spire.Office for Java</a></li>
+                        <li><a href="/Introduce/doc-for-java.html">Spire.Doc for Java</a></li>
+                        <li><a href="/Introduce/xls-for-java.html">Spire.XLS for Java</a></li>
+                        <li><a href="/Introduce/presentation-for-java.html">Spire.Presentation for Java</a></li>
+                        <li><a href="/Introduce/pdf-for-java.html">Spire.PDF for Java</a></li>
+                        <li><a href="/Introduce/barcode-for-java.html">Spire.Barcode for Java</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-lists lists-three">
+                <span class="lists-title">Purchase</span>
+                <div class="contents">
+                    <ul class="links">
+                        <li><a href="/Download/product-list.html" rel="nofollow">Order Online</a></li>
+                        <li><a href="/Tutorials/Purchase/Purchase-FAQS.html" rel="nofollow">Purchase FAQs</a></li>
+                        <li><a href="/Misc/support-faqs.html" rel="nofollow">Support FAQs</a></li>
+                        <li><a href="/Misc/purchase-policies.html" rel="nofollow">Purchase Policies</a></li>
+                        <li><a href="/Tutorials/Licensing/Renew-Subcription.html" rel="nofollow">Renewal Policies</a></li>
+                        <li><a href="/Tutorials/Purchase/License-Upgrade.html" rel="nofollow">License Upgrade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-lists lists-4">
+                <span class="lists-title">Partnership</span>
+                <div class="contents">
+                    <ul class="links">
+                        <li><a href="/Misc/partner.html" rel="nofollow">Partner</a></li>
+                        <li><a href="/Misc/affiliate.html" rel="nofollow">Affiliate</a></li>
+                        <li><a href="/Misc/find.html">Find A Reseller</a></li>
+                        <li><a href="/Misc/reseller.html">Become Our Reseller</a></li>
+                        <li><a href="/Misc/our-customers.html" rel="nofollow">Our Customers</a></li>
+                        <li><a href="/Misc/testimonial/1.html" rel="nofollow">Believe The Users</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-lists lists-5">
+                <span class="lists-title">Corporation</span>
+                <div class="contents">
+                    <ul class="links">
+                        <li><a href="/Misc/about-us.html" rel="nofollow">About Us</a></li>
+                        <li><a href="/Misc/maillist.html" rel="nofollow">Contact Us</a></li>
+                        <li><a href="/Misc/our-service.html" rel="nofollow">Our Service</a></li>
+                        <li><a href="/Misc/reviews.html">Reviews</a></li>
+                        <li><a href="/privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="footer-three">
+<div class="footer-three-wrapper">
+                <div class="footer-last-div" style="height: 36px;line-height: 36px;">
+                    <span style="padding-right:50px;color:#9b9b9b;">Copyright © <span id="now_year_ice" style="color: #9b9b9b;">2022</span> e-iceblue. All Rights Reserved.</span>
+                </div>
+                    <div class="footer-last-div img-safe">
+                        <a href="https://safeweb.norton.com/report/show?url=www.e-iceblue.com&ulang=eng">
+                            <img src="https://cdn.e-iceblue.com/images/index/norton.png" border="0" />
+                        </a>
+                    </div>
+                    <div class="footer-last-div img-safe">
+                        <a href="#">
+                            <img src="https://cdn.e-iceblue.com/images/index/mcafee.png" border="0" />
+                        </a>
+                    </div>
+
+        </div>
+
+</div>
+
+    </div>
+</div>
+<script>
+    var nowdate = new Date();
+    var year = nowdate.getFullYear();
+    var div = document.getElementById('now_year_ice');
+    div.innerHTML = year;
+</script>		
+</div></div>			</div>
+			<!-- bottom1 end -->
+					
+		
+			
+			<div id="footer">
+
+				
+			</div>
+			<!-- footer end -->
+
+		</div>
+
+	</div>
+		<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070860357/?value=0&label=nvb7CKPGywQQxZDQ_gM&guid=ON&script=0"/>
+</div>
+</noscript><div class="back-to-top-div">
+    <p id="back-to-top"><a href="#top"><span></span></a></p>
+
+</div>
+
+<script type="text/javascript">
+
+    var $j5 = jQuery.noConflict();
+    $j5(document).ready(function(){
+        //首先将#back-to-top隐藏
+        $j5("#back-to-top").hide();
+        //当滚动条的位置处于距顶部600像素以下时，跳转链接出现，否则消失
+        $j5(function () {
+            $j5(window).scroll(function(){
+                if ($j5(window).scrollTop()>600){
+                    $j5("#back-to-top").fadeIn(500);
+                }else{
+                    $j5("#back-to-top").fadeOut(500);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $j5("#back-to-top").click(function(){
+                $j5('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    });
+</script>	<script type="text/javascript" src="/libraries/cache/fetch.php?f=ec565ed253e811041fbe9a023b697531.js" async="true" defer="true"></script></body>
+</html>
